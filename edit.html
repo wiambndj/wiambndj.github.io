@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>asfa</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!--Material Icon -->
+    <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+
+    <!-- selectize css -->
+    <link rel="stylesheet" type="text/css" href="css/selectize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" />
+
+    <!-- Custom  Css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Navigation Bar-->
+     <header id="topnav" class="defaultscroll scroll-active">
+          <div class="tagline">
+            <div class="container">
+                <div class="float-left">
+                    <div class="phone">
+                        <i class="mdi mdi-phone-classic"></i> +213 123 45 67
+                    </div>
+                    <div class="email">
+                        <a href="#">
+                            <i class="mdi mdi-email"></i> Support@wasfa.com
+                        </a>
+                    </div>
+                </div>
+                <div class="float-right">
+                    <ul class="topbar-list list-unstyled d-flex" style="margin: 11px 0px;">
+                        <li class="list-inline-item"><a href="javascript:void(0);"><i class="mdi mdi-account mr-2"></i>Mr smahi</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- Tagline End -->
+
+        <!-- Menu Start -->
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a href="index.html" class="logo">
+                   <img src="images/1.png" alt="" class="logo-light" height="160" />
+                    <img src="images/2.png" alt="" class="logo-dark" height="160" />
+                </a>
+            </div>        
+             <div class="buy-button">
+                &nbsp;&nbsp;<a href="signup.html" class="btn btn-primary">S'inscrire</a>
+            </div><div class="buy-button">
+              &nbsp;&nbsp;  <a href="login.html" class="btn btn-primary"> Se connecter</a>
+            </div>                  
+            <div class="buy-button">
+                <a href="post-a-job.html" class="btn btn-primary"><i class="fas fa-plus"></i>Ajouter une presciption</a>
+            </div><!--end login button-->
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu">
+                    <li><a href="index.html">Acceuil</a></li>
+                     <li><a href="prescriptions-list.html">Prescriptions</a></li>
+                  
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+        <!--end end-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    <!-- Start home -->
+   <section class="bg-half page-next-level"> 
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="candidates-profile-details text-center">
+                        <img src="https://via.placeholder.com/400X400//88929f/5a6270C/O https://placeholder.com/" height="150" alt="" class="d-block mx-auto shadow rounded-pill mb-4">
+                        <h5 class="text-white mb-2">Mr smahi</h5>
+                        <p class="text-white-50 h6 mb-2"><i class="mdi mdi-account mr-2"></i>Medecin</p>
+                    
+               
+
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- POST A JOB START -->
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="rounded shadow bg-white p-4">
+                        <div class="custom-form">
+                            <div id="message3"></div>
+                            <form method="post" action="php/contact.php" name="contact-form" id="contact-form3">
+                                <h4 class="text-dark mb-3">Modifier la prescription</h4>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Titre de la prescription</label>
+                                            <input id="company-name" type="text" class="form-control resume" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Pathologie</label>
+                                            <div class="form-button">
+                                                <select id="select-country" class="demo-default">
+                                            
+                                                         <optgroup label="A">
+                                                        <option value="">Acidose tubulaire distale</option>
+                                                        <option value="AF">Amélogenése imparfaite et néphrocalcinose</option>
+                                                        <option value="AX">Anévrisme de l’aorte thoracique</option>
+                                                             </optgroup>
+                                                         <optgroup label="C">
+                                                        <option value="AL">Cystinose</option>
+
+                                                        <option value="DZ">Cystinurie</option>
+                                                        <option value="AS">Cytopathies mitochondriales MELAS et Autres</option>
+                                                    </optgroup>
+                                                     <optgroup label="D">
+                                                        <option value="AD">Déficience en lécithine-cholestérol-acyl-transférase</option>
+                                                        <option value="AO">Diabète Insipide Central</option>
+                                                        <option value="AI">Diabète insipide néphrogénique</option></optgroup>
+                                                    
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Classification</label>
+                                            <div class="form-button">
+                                                 <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">Appareil digestif et métabolisme</option>
+                                                        <option value="AX">&Aring;Sang et organes hématopoïétiques</option>
+                                                        <option value="AL">Système Cardio-vasculaire</option>
+                                                        <option value="DZ">Dermatologie</option>
+                                                        <option value="AS">Système Génito-urinaire et hormones sexuelles</option>
+                                                        <option value="AD">Préparations systémiques hormonales à l’exception des
+hormones sexuelles et de l’insuline</option>
+                                                        <option value="AO">Anti-infectieux à usage systémique</option>
+                                                        <option value="AI">Antinéoplasiques et agents immunomodulateurs</option>
+                                                        <option value="AQ">Système musculo-squelettique</option>
+                                                        <option value="AG">Système nerveux</option>
+                                                        <option value="AR">Produits antiparasitaires, insecticides et révulsifs</option>
+                                                        <option value="AM">Système respiratoire</option>
+                                                        <option value="AW">Organes sensoriels</option>
+                                                        <option value="AU">Divers</option>
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                               
+                                    <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Médicament</label>
+                                            <div class="form-button">
+                                           <select id="select-category" class="demo-default">
+                                                 
+                                                        <option value="4">Aspirine</option>
+                                                        <option value="1">Amoxicilline</option>
+                                                        
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                               <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Forme gélinique</label>
+                                            <div class="form-button">
+                                           <select id="select-category" class="demo-default">
+                                                 
+                                                        <option value="4">Comprimé</option>
+                                                        <option value="1">gélules</option>
+                                                        
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                      <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Indication</label>
+                                            <input id="minimum-salary" type="text" class="form-control resume" placeholder="Fièvre">
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Voie d'administration</label>
+                                            <div class="form-button">
+                                                        <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">Voie orale</option>
+                                                        <option value="AX">Voies d'injection</option>
+                                                        <option value="AL">Voie oculaire</option>
+                                                        <option value="DZ">Voie rectale</option>
+                                                        
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Quantité</label>
+                                            <div class="form-button">
+                                                        <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">1</option>
+                                                        <option value="AX">2</option>
+                                                        <option value="AL">25</option>
+                                                        <option value="DZ">50</option>
+                                                        
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Unité</label>
+                                            <div class="form-button">
+                                                        <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">CAS</option>
+                                                        <option value="AX">CAC</option>
+                                                        <option value="AL">Mg</option>
+                                                        <option value="DZ">Ml</option>
+                                                        
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+  <div class="col-md-1">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Matin</label>
+                                          <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" style="color: white; ">
+                                                <label class="custom-control-label"  style="color: white;" for="customCheck1"></label>
+                              
+                                        </div>
+                                        </div>
+                                    </div>
+                                 <div class="col-md-1">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Medi</label>
+                                          <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2" style="color: white; ">
+                                                <label class="custom-control-label"  style="color: white;" for="customCheck2"></label>
+                              
+                                        </div>
+                                        </div>
+                                    </div>
+                                      <div class="col-md-1">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Soir</label>
+                                          <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3" style="color: white; ">
+                                                <label class="custom-control-label"  style="color: white;" for="customCheck3"></label>
+                              
+                                        </div>
+                                        </div>
+                                    </div>
+                                      <div class="col-md-1">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Av.coucher</label>
+                                          <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4" style="color: white; ">
+                                                <label class="custom-control-label"  style="color: white;" for="customCheck4"></label>
+                              
+                                        </div>
+                                        </div>
+                                    </div>
+                                           <div class="col-md-1">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">      </label>
+
+                                            <div class="form-button">
+                                                        
+                                              <input id="company-name" type="text" class="form-control resume" placeholder="5">           
+                                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                               <div class="col-md-3">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">      &nbsp;Durée</label>
+
+                                            <div class="form-button">
+                                                        <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">Jour</option>
+                                                        <option value="AX">Semaine</option>
+                                                        <option value="AL">Mois</option>
+                                                      
+                                                        
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   
+
+                                      <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Mode d'administration</label>
+                                            <div class="form-button">
+                                                        <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">Voie orale</option>
+                                                        <option value="AX">Voies d'injection</option>
+                                                        <option value="AL">Voie oculaire</option>
+                                                        <option value="DZ">Voie rectale</option>
+                                                        
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                             
+
+                        
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Description</label>
+                                            <textarea id="description" rows="6" class="form-control resume" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+             
+                                <div class="row">
+                                    <div class="col-lg-12 mt-2">
+                                        <a href="#" class="btn btn-primary">Publier</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- POST A JOB END -->
+
+
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="javascript:void(0)"><img src="images/1.png" height="180" alt=""></a>
+                    <p class="mt-4">Wasfa,l'outil d’aide à la prescription médicamenteuse hors AMM en pédiatrie</p>
+                    <ul class="social-icon social list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="rounded"><i class="mdi mdi-google"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <p class="text-white mb-4 footer-list-title">Wasfa</p>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="prescriptions-list.html" class="text-foot"><i class="mdi mdi-chevron-right"></i> Liste de prescription</a></li>
+                        <li><a href="new.html" class="text-foot"><i class="mdi mdi-chevron-right"></i> Nouvelle prescription</a></li>
+                       
+                    </ul>
+                </div>
+                
+            
+                
+            </div>
+        </div>
+    </footer>
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+        <i class="mdi mdi-chevron-up d-block"> </i> 
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- selectize js -->
+    <script src="js/selectize.min.js"></script>
+
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
