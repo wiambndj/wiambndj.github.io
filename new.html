@@ -174,7 +174,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                     <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Médicament</label>
+                                            <div class="form-button">
+                                           <select id="select-category" class="demo-default">
+                                                 
+                                                        <option value="4">Aspirine</option>
+                                                        <option value="1">Amoxicilline</option>
+                                                        
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+
+                                <div class="row">
+                                 <div class="col-md-6">
                                         <div class="form-group app-label mt-2">
                                             <label class="text-muted">Classification</label>
                                             <div class="form-button">
@@ -201,24 +218,25 @@ hormones sexuelles et de l’insuline</option>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="row">
-                               
                                     <div class="col-md-6">
                                         <div class="form-group app-label mt-2">
-                                            <label class="text-muted">Médicament</label>
+                                            <label class="text-muted">Catégorie</label>
                                             <div class="form-button">
-                                           <select id="select-category" class="demo-default">
-                                                 
-                                                        <option value="4">Aspirine</option>
-                                                        <option value="1">Amoxicilline</option>
+                                         <select id="select-country" class="demo-default">
                                                         
+                                                        <option value="AF">Tranche d'age non conforme</option>
+                                                        <option value="AX">&Aring;Posologie non spécifié par l'AMM</option>
+                                                        <option value="AL">Absence d'indicateion</option>
+                                                        <option value="DZ">Absence de population pédiatrique</option>
+                                                        <option value="AS">Médicament reconditionné</option>
+                                                        <option value="AD">Absence d'AMM en Algérie</option>
+                                                       
+
                                                     </select>
                                             </div>
                                         </div>
                                     </div>
-                                               <div class="col-md-6">
+                                               <div class="col-md-4">
                                         <div class="form-group app-label mt-2">
                                             <label class="text-muted">Forme gélinique</label>
                                             <div class="form-button">
@@ -232,13 +250,13 @@ hormones sexuelles et de l’insuline</option>
                                         </div>
                                     </div>
                                     
-                                      <div class="col-md-6">
+                                      <div class="col-md-4">
                                         <div class="form-group app-label mt-2">
                                             <label class="text-muted">Indication</label>
                                             <input id="minimum-salary" type="text" class="form-control resume" placeholder="Fièvre">
                                         </div>
                                     </div>
-                                     <div class="col-md-6">
+                                     <div class="col-md-4">
                                         <div class="form-group app-label mt-2">
                                             <label class="text-muted">Voie d'administration</label>
                                             <div class="form-button">
@@ -383,9 +401,54 @@ hormones sexuelles et de l’insuline</option>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group app-label mt-2">
+                                            <label class="text-muted">Type hors AMM</label>
+                                            <div class="form-button">
+                                                        <select id="select-country" class="demo-default">
+                                              
+                                                        <option value="AF">Sans AMM/ Sous ATU/En essais clinique</option>
+                                                        <option value="AX">Préparations hospitalières</option>
+                                                        <option value="AL">Médicaments dilués/Reconditionnés</option>
+                                                        <option value="DZ">Comprimé écrasé, gélule ouverte, solution diluée</option>
+                                                        <option value="DZ">Contre indiqué</option>
+
+                                                    <option value="DZ">L’absence de données pédiatriques</option>
+                                                         <option value="DZ">Validée uniquement chez l’adulte</option>
+                                                         <option value="DZ">Posologie non spécifiée par l’AMM</option>
+                                                         <option value="DZ">L’administration par une voie autre que celle spécifiée par l’AMM. </option>
+                                                         <option value="DZ">Manque d’un traitement complémentaire. </option>
+
+                                                   
+
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
-
+   <div class="row">        <div class="col-md-8">
+                                    
+                                         <div id="field">
+                <div id="field0" >
+                    <div class="form-group mb-8">
+                        <label class="text-muted"  for="Nom">Réference</label>  
+                        <div class="col-md-8">
+                           <input id="Nom" name="Nom" type="text" placeholder="" class="form-control resume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-4">
+             <div class="form-group">
+                <div class="col-md-4">
+                    <button id="add-more" name="add-more" class="btn btn-primary btn-md">+</button>
+                </div>
+            </div>
+                                   
+                                </div>
+                                </div>
+                            
                              
 
                         
@@ -397,6 +460,11 @@ hormones sexuelles et de l’insuline</option>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+        
+   
 
              
                                 <div class="row">
@@ -460,6 +528,39 @@ hormones sexuelles et de l’insuline</option>
     <script src="js/jquery.nice-select.min.js"></script>
 
     <script src="js/app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+    var next = 0;
+    $("#add-more").click(function(e){
+        e.preventDefault();
+        var addto = "#field" + next;
+        var addRemove = "#field" + (next);
+        next = next + 1;
+        var newIn = '<div id="field'+ next +'" name="field'+ next +'"><!-- Text input--><div class="form-group"> <label class="text-muted" for="Nom">Réference</label>'
+        +'<div class="col-md-8"> <input id="Nom" name="Nom" type="text" placeholder="" class="form-control resume"> </div></div>'
+        
+       
+       
+        
+        var newInput = $(newIn);
+        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me btn-xs pull-right" >x</button></div></div>'
+        +'<div id="field"><br>';
+        var removeButton = $(removeBtn);
+        $(addto).after(newInput);
+        $(addRemove).after(removeButton);
+        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
+        $("#count").val(next);  
+        
+            $('.remove-me').click(function(e){
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length-1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+    });
+});
+    </script>
 
 </body>
 </html>
